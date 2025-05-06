@@ -73,6 +73,14 @@ from root.flask_routes.monthlyprojectionsales import app_file58
 from root.flask_routes.customer import app_file77
 
 
+from root.flask_routes.franchise.franchise_login import app_file101
+from root.flask_routes.stocks.deleterequisition import app_file102
+from root.flask_routes.stocks.getstocks import app_file103
+from root.flask_routes.stocks.poststockstatement import app_file104
+from root.flask_routes.stocks.poststockTransfer import app_file105
+
+
+
 
 
 
@@ -140,6 +148,12 @@ app.register_blueprint(app_file58)
 
 
 app.register_blueprint(app_file77)
+
+app.register_blueprint(app_file101)
+app.register_blueprint(app_file102)
+app.register_blueprint(app_file103)
+app.register_blueprint(app_file104)
+app.register_blueprint(app_file105)
 
 
 @app.route("/entry1", methods=["POST"])
